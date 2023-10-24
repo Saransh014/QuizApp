@@ -15,16 +15,52 @@ class QuestionsSummary extends StatelessWidget {
             (data) {
               return Row(
                 children: <Widget>[
-                  Text(((data['question_index'] as int) + 1).toString()),
+                  CircleAvatar(
+                      backgroundColor:
+                          data['user_answer'] == data['correct_answer']
+                              ? Colors.green
+                              : Colors.red,
+                      child: Text(
+                          ((data['question_index'] as int) + 1).toString())),
+                  const SizedBox(
+                    width: 5,
+                  ),
                   Expanded(
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        Text(data['question'] as String),
+                        Text(
+                          data['question'] as String,
+                          style: const TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 15,
+                          ),
+                        ),
                         const SizedBox(
                           height: 5,
                         ),
-                        Text(data['user_answer'] as String),
-                        Text(data['correct_answer'] as String),
+                        Text(
+                          data['user_answer'] as String,
+                          style: TextStyle(
+                              color:
+                                  data['user_answer'] == data['correct_answer']
+                                      ? const Color.fromARGB(255, 0, 255, 8)
+                                      : const Color.fromARGB(255, 249, 46, 32)),
+                        ),
+                        const SizedBox(
+                          height: 5,
+                        ),
+                        Text(
+                          data['correct_answer'] as String,
+                          style: TextStyle(
+                              color:
+                                  data['user_answer'] == data['correct_answer']
+                                      ? const Color.fromARGB(255, 0, 255, 8)
+                                      : const Color.fromARGB(255, 0, 255, 8)),
+                        ),
+                        const SizedBox(
+                          height: 5,
+                        ),
                       ],
                     ),
                   ),

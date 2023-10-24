@@ -70,6 +70,8 @@ class _QuizState extends State<Quiz> {
     }
 
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'QuickQuiz',
       home: Scaffold(
         body: Container(
           decoration: const BoxDecoration(

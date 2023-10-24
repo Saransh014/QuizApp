@@ -2,12 +2,12 @@ import 'package:adv_basics/models/quiz_question.dart';
 
 const questions = [
   QuizQuestion(
-    "Grand Central Terminal, Park Avenue, New York is the world's",
+    'What is the capital of United States of America?',
     [
-      'Largest railway station',
-      'highest railway station',
-      'longest railway station',
-      'none of the above',
+      'Washington DC',
+      'New York',
+      'California',
+      'Las Vegas',
     ],
   ),
   QuizQuestion(
@@ -29,12 +29,30 @@ const questions = [
     ],
   ),
   QuizQuestion(
-    'Which widget should you try to use more often: StatelessWidget or StatefulWidget?',
+    'Which bank is called bankers Bank of India?',
     [
-      'StatelessWidget',
-      'StatefulWidget',
-      'Both are equally good',
-      'None of the above',
+      'Reserve Bank of India',
+      'Punjab National Bank',
+      'ICICI Bank',
+      'State Bank of India',
+    ],
+  ),
+  QuizQuestion(
+    "Golden Temple, Amritsar is India's",
+    [
+      'largest Gurdwara',
+      'oldest Gurudwara',
+      'Both option A and B are correct',
+      'None of the above'
+    ],
+  ),
+  QuizQuestion(
+    'In which year did the Second World War ended?',
+    [
+      '1945',
+      '1944',
+      '1946',
+      '1943',
     ],
   ),
   QuizQuestion(
@@ -44,6 +62,33 @@ const questions = [
       'ICICI Bank',
       'State Bank of India',
       'HDFC Bank',
+    ],
+  ),
+  QuizQuestion(
+    "Grand Central Terminal, Park Avenue, New York is the world's",
+    [
+      'Largest railway station',
+      'highest railway station',
+      'longest railway station',
+      'none of the above',
+    ],
+  ),
+  QuizQuestion(
+    'How many players are there on each side in the game of Basketball?',
+    [
+      '5',
+      '4',
+      '6',
+      '7',
+    ],
+  ),
+  QuizQuestion(
+    'India has largest deposits of ____ in the world',
+    [
+      'Mica',
+      'Gold',
+      'Copper',
+      'None of the above',
     ],
   ),
 ];
